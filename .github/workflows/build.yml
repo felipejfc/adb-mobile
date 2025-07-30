@@ -27,6 +27,9 @@ jobs:
         with:
           go-version: '1.22.5'
 
+      - name: install cmake from dmg
+        run: make install-cmake
+
       - name: install dependencies
         continue-on-error: true
         run: |
